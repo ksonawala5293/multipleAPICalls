@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="ProductCVC" customModule="toshalTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="208" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmv-tP-PEB" customClass="CardView" customModule="toshalTest" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="198" height="173"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="36M-F7-Kaq">
+                                <rect key="frame" x="0.0" y="0.0" width="198" height="173"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIX-rA-10R" customClass="Gradient" customModule="toshalTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="69.333333333333314" width="198" height="103.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                        <real key="value" value="0.75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-oF-kT7">
+                                <rect key="frame" x="0.0" y="142" width="198" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="S6r-oF-kT7" secondAttribute="bottom" constant="10" id="Dcm-A1-ufp"/>
+                            <constraint firstAttribute="trailing" secondItem="DIX-rA-10R" secondAttribute="trailing" id="Gtb-Tz-zU0"/>
+                            <constraint firstItem="DIX-rA-10R" firstAttribute="height" secondItem="36M-F7-Kaq" secondAttribute="height" multiplier="0.6" id="OEH-1C-kEX"/>
+                            <constraint firstItem="S6r-oF-kT7" firstAttribute="leading" secondItem="Pmv-tP-PEB" secondAttribute="leading" id="Psl-Hz-5lx"/>
+                            <constraint firstItem="DIX-rA-10R" firstAttribute="leading" secondItem="Pmv-tP-PEB" secondAttribute="leading" id="UxU-Se-5dp"/>
+                            <constraint firstAttribute="trailing" secondItem="S6r-oF-kT7" secondAttribute="trailing" id="VH5-PM-Ekp"/>
+                            <constraint firstAttribute="trailing" secondItem="36M-F7-Kaq" secondAttribute="trailing" id="d7b-RU-x2q"/>
+                            <constraint firstItem="36M-F7-Kaq" firstAttribute="top" secondItem="Pmv-tP-PEB" secondAttribute="top" id="dSk-Ix-8LO"/>
+                            <constraint firstItem="36M-F7-Kaq" firstAttribute="leading" secondItem="Pmv-tP-PEB" secondAttribute="leading" id="s9Y-eV-REs"/>
+                            <constraint firstAttribute="bottom" secondItem="DIX-rA-10R" secondAttribute="bottom" id="ucP-Rd-XVj"/>
+                            <constraint firstAttribute="bottom" secondItem="36M-F7-Kaq" secondAttribute="bottom" id="ymQ-yz-Ls8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Pmv-tP-PEB" secondAttribute="trailing" constant="5" id="NJV-qN-7eO"/>
+                <constraint firstItem="Pmv-tP-PEB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="fIh-EL-o1Q"/>
+                <constraint firstItem="Pmv-tP-PEB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="k7y-ze-ZnA"/>
+                <constraint firstAttribute="bottom" secondItem="Pmv-tP-PEB" secondAttribute="bottom" constant="5" id="tMc-Hb-1Fm"/>
+            </constraints>
+            <size key="customSize" width="208" height="183"/>
+            <connections>
+                <outlet property="imgProduct" destination="36M-F7-Kaq" id="npL-2s-6k5"/>
+                <outlet property="lblTitle" destination="S6r-oF-kT7" id="rz0-cB-hUx"/>
+            </connections>
+            <point key="canvasLocation" x="212.21374045801525" y="66.549295774647888"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="222" height="148"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

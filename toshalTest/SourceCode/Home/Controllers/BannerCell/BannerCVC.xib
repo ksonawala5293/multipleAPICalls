@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="BannerCVC" customModule="toshalTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="DNO-jA-gul">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="167"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DNO-jA-gul" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3XQ-E9-2F9"/>
+                <constraint firstAttribute="bottom" secondItem="DNO-jA-gul" secondAttribute="bottom" id="aWE-XY-Emu"/>
+                <constraint firstItem="DNO-jA-gul" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rTm-KG-qfv"/>
+                <constraint firstAttribute="trailing" secondItem="DNO-jA-gul" secondAttribute="trailing" id="s0c-OJ-rx0"/>
+            </constraints>
+            <size key="customSize" width="316" height="167"/>
+            <connections>
+                <outlet property="imgBanner" destination="DNO-jA-gul" id="Fva-OW-J25"/>
+            </connections>
+            <point key="canvasLocation" x="-63" y="12"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="222" height="148"/>
+    </resources>
+</document>
